@@ -29,7 +29,8 @@
           until (or (= attempts 0) (and (integerp guess) (= guess secret-number))))
     (if (> attempts 0)
         (format t "You win! The secret number was ~d.~%" secret-number)
-        (format t "You lost! The secret number was ~d.~%" secret-number))))
+        (format t "You lost! The secret number was ~d.~%" secret-number)))
+  (format t "Thanks for playing!~%"))
 
 (guess-the-secret-number)
 
